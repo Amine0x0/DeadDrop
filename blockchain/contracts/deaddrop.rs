@@ -27,7 +27,7 @@ pub struct Initialize<'info> {
 
 #[account]
 pub struct Escrow {
-    pub cid: String,   // The IPFS location
-    pub price: u64,    // Price in Lamports
-    pub is_paid: bool, // Status
+    pub cid: String,
+    pub price: u64,   
+    pub is_paid: bool,
 }
