@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(src/core/include)
 
-add_executable(deaddrop_core 
-    src/core/main.cpp
-)
+file(GLOB_RECURSE CORE_SOURCES "src/core/*.cpp")
+
+add_executable(deaddrop_core ${CORE_SOURCES})

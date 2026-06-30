@@ -1,14 +1,7 @@
 #include <Core.hpp>
 
-namespace tooling{
-    void ping();
-}
 
-void tooling::ping(){
-    std::cout << "pong!" << std::endl;
-}
-
-int main(){
+int main(int argc, char **argv){
     {
         tooling::ping();
         return (0);
